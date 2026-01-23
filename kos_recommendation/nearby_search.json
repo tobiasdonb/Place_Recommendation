@@ -1,0 +1,943 @@
+[
+    {
+        "html_attributions": [],
+        "next_page_token": "AcnlKN3oEvyHwQ-TFAI-pfR59ZJtQ7hQ3-6CJdRwH7Yb7d2xjt2nOwKX0JFcFNrxCDgivjCakdiFlimqNdZQ5E970_-WcX4cez_U7v2wQ1QtppJCb0ZTVyKNvtM-jq88Q_YfaPqCrdkQYdIDJlTHar0D_zDgrwFzvg1sGO8BQpffQp16uM-x3H6a-IXJKQohP0g6CSc9fyToItYfFcEw55SvtyqaMttsjk8pFVIqlsiYIzb3beiyy8MKEJHCxMeHWyA2LduPoyEOwihNuaSonkU0G9WJotwOIWllGpY0FQEdByPRba8ujj-Vn7kFehrJY7BENEqrV5DIIoW19f0OahBjx_3XfbuTAgnc_cc6lC0i9rMEuzjrqa70Oe3tnQm2gMff5rXpjAGbVW9LidgKA9ABeUCdGQZ50xSmQWNaUaLemVyxt7fBfMHNU_Wj-g",
+        "results": [
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6885798,
+                        "lng": 115.2589453
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.687223969708498,
+                            "lng": 115.2603303302915
+                        },
+                        "southwest": {
+                            "lat": -8.689921930291503,
+                            "lng": 115.2576323697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+                "icon_background_color": "#7B9EB0",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+                "international_phone_number": "+62 878-0008-7878",
+                "name": "Global Health Center",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3024,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/115686062307728455643\">Global Health Center Sanur</a>"
+                        ],
+                        "photo_reference": "AcnlKN1KfhILwxC13EdCBC3oIkBTloVI9ZoLW8o3xFCjKMK_AoSJfxCRJVS6jifE6ueD6ZempKvCjjaE2QdJVigAvUCdtZbbTsaynEmyOWoudqUfQf6dU607kXFHCYz17jETpb3-XyPfd3JrMUFIYgpYXHZzG2DyppGwIRuLdYbxI1iR_dWToIck48Uauobewug0z3l7UdqZQy3sAsbmbiuD7Zq75b4QG5URrHk2e5Dc3LL43_hUufshmxuljp1npGZHclIvvNz9eCGNyM1HZfmr7GvoXKN4L9kpmvbukGxojrxlM5jBbITWC0eSBsq9_tZITV-mWDzpEcE",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJq6qqqslG0i0R6tfJwAuzkls",
+                "plus_code": {
+                    "compound_code": "8765+HH Sanur, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q8765+HH"
+                },
+                "rating": 4.8,
+                "reference": "ChIJq6qqqslG0i0R6tfJwAuzkls",
+                "scope": "GOOGLE",
+                "types": [
+                    "physiotherapist",
+                    "hospital",
+                    "pharmacy",
+                    "health",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 68,
+                "vicinity": "Jalan Bypass Ngurah Rai No.178, Sanur"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.7035694,
+                        "lng": 115.2487979
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.702564569708496,
+                            "lng": 115.2499102802915
+                        },
+                        "southwest": {
+                            "lat": -8.7052625302915,
+                            "lng": 115.2472123197085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 361 4490566",
+                "name": "Bali Mandara Regional General Hospital",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 1080,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/105000744604766490703\">Rumah Sakit Umum Daerah Bali Mandara</a>"
+                        ],
+                        "photo_reference": "AcnlKN2WHmMPbjgF-9M1fgciomEUybdzsosUyL1S_SeVD4m7WdCiWzzPFzwihF0NC2d3SdO719TqmF15LLN1WZN53fjeFovUZM0Zi5_RdqtZiCYHWKHNQ-CHe71Bikdviq9hHqQAvzChHEki5iUKl76C1ELDQTDPFrCk7H1o-nH43YrCRR0yr7vQSqOtIH--kLxDP0U8txJzS73lR74riD4ZbmeaNBb13jiw25-6B4JEsQro-X4a5jsu16RDP2LnGQRvxeneajavbV8Kc3X3AAgJRXYMXD7ROjF3L6pBlV2yECo_p2wUKlvhaRzT1IdDDw_YW1iEp8fZ9WA",
+                        "width": 1920
+                    }
+                ],
+                "place_id": "ChIJNRVLr7xB0i0RGTlSyXC5Rhg",
+                "plus_code": {
+                    "compound_code": "76WX+HG Sanur Kauh, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q76WX+HG"
+                },
+                "rating": 4,
+                "reference": "ChIJNRVLr7xB0i0RGTlSyXC5Rhg",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 1521,
+                "vicinity": "Jalan Bypass Ngurah Rai No.548, Sanur Kauh"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.669945799999999,
+                        "lng": 115.2240217
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.668565369708496,
+                            "lng": 115.2253721802915
+                        },
+                        "southwest": {
+                            "lat": -8.6712633302915,
+                            "lng": 115.2226742197085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 361 2109000",
+                "name": "Rumah Sakit Ibu & Anak Bali Royal (RSIA Bali Royal)",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 2252,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110543167801881534983\">Rumah Sakit Ibu &amp; Anak Bali Royal (RSIA Bali Royal)</a>"
+                        ],
+                        "photo_reference": "AcnlKN0oYsWsxFvAdJrAlj0lskBOvnBLL5Rhja5nqKfACq_D7MROu0WqMKG3az6e9Uds1yPEA_YGxXBW81guRw8-aaeiCEEfdvv_JoXhEZw8erF7thu4YgXqrCV48O-rhNzOu_SXhGDy5WHaRWAbypDd1PUM2XNpi2Hup6e7qdL7QeW5O_dbMaKBmCftJP8LYN1VopiiwXphN0cjY_RLfuSYMmfZpVTen5nB9Iaub3RCt9tOBMg_wWBHOfW2o96cMJImiCAUF9PpgYpEupv6fyLGoDGrMIVqRT_BspmyM0-wUXCBHLRpM4rC3eLnoFqV5uK-7ZAfpv5jVPU",
+                        "width": 4000
+                    }
+                ],
+                "place_id": "ChIJ3UNdaJJA0i0RtcNXNcHxnRI",
+                "plus_code": {
+                    "compound_code": "86JF+2J Dangin Puri Klod, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q86JF+2J"
+                },
+                "rating": 3.7,
+                "reference": "ChIJ3UNdaJJA0i0RtcNXNcHxnRI",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 3,
+                "vicinity": "Jl. Tantular Barat No.45, Dangin Puri Klod"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6830196,
+                        "lng": 115.2594013
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.6816669197085,
+                            "lng": 115.2606640802915
+                        },
+                        "southwest": {
+                            "lat": -8.684364880291504,
+                            "lng": 115.2579661197085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 361 281178",
+                "name": "Klinik Kanaka Medika",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 1280,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/106197259885133828462\">Klinik Pratama Rawat Jalan Kanaka Medika</a>"
+                        ],
+                        "photo_reference": "AcnlKN2m48OoNSz4cWsG8Q51Wr7SffyicKpdCR7UC87mg-eHid1I0auk7kIdAa7FiKCGUQZZswPHzXE3QOns3R-QL0vESytl9xO3ic5tf8N1cn_wC1fIlpArQCpaRgRkaLmYhaPA9Tb-slevyHgDAurNxFUSB5Kj_AVr5xrtYZjbXkbxBBR_QYTb5_JDxe2rt4cU-02DLXp16-Zr4hL_dyymbQ-eboCWLKr2GRLJXzcfignx1O5dw4yjWjhQHSMMxroeWMm-kPB4CS4EyKQTa2hfYOg4NCi01R3-4p2CYangJBTeG7kk5JJZlZ1CPqz0M7YU07PVjnXF6JQ",
+                        "width": 960
+                    }
+                ],
+                "place_id": "ChIJLzEf4LVB0i0RSSWLXBwWPgk",
+                "plus_code": {
+                    "compound_code": "8785+QQ Sanur, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q8785+QQ"
+                },
+                "rating": 4.7,
+                "reference": "ChIJLzEf4LVB0i0RSSWLXBwWPgk",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "dentist",
+                    "doctor",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 40,
+                "vicinity": "Jalan Bypass Ngurah Rai Selatan No.113, Sanur"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.688845599999999,
+                        "lng": 115.2580412
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.687490469708496,
+                            "lng": 115.2592641302915
+                        },
+                        "southwest": {
+                            "lat": -8.690188430291501,
+                            "lng": 115.2565661697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 361 8514527",
+                "name": "KT. DianErlyyawati, S.KM,Akp.",
+                "place_id": "ChIJL-ZJFrVB0i0RjdXPOB8O49E",
+                "plus_code": {
+                    "compound_code": "8765+F6 Sanur, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q8765+F6"
+                },
+                "reference": "ChIJL-ZJFrVB0i0RjdXPOB8O49E",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "vicinity": "JL. Soka, Gang VI, No. 30, Sanur"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6900961,
+                        "lng": 115.2570869
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.688754169708497,
+                            "lng": 115.2584955802915
+                        },
+                        "southwest": {
+                            "lat": -8.691452130291502,
+                            "lng": 115.2557976197085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 811-3831-8590",
+                "name": "Main Lobby Business Office",
+                "place_id": "ChIJAc625_ZB0i0R9fpDoyKLsNI",
+                "plus_code": {
+                    "compound_code": "8754+XR Sanur, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q8754+XR"
+                },
+                "reference": "ChIJAc625_ZB0i0R9fpDoyKLsNI",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "vicinity": "Jl. Kawasan Ekonomi Khusus Sanur LotH1-H2"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6790429,
+                        "lng": 115.2591727
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.677695769708496,
+                            "lng": 115.2604983302915
+                        },
+                        "southwest": {
+                            "lat": -8.680393730291499,
+                            "lng": 115.2578003697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 150919",
+                "name": "Bali International Hospital (Emergency Entrance)",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 800,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/118355952310016874013\">Bali International Hospital (Emergency Entrance)</a>"
+                        ],
+                        "photo_reference": "AcnlKN2W9MefOqHxMcuD6RAC8LSVMNBM5H-lO9nzUSm-H4oJOf_ZptqakTJke_tP3xgfx3xNmWpyhiqA-MDO6mSqBveBWAx3O5lgSVvVSPhruHpoWFkdRP2TerwCVqPcmHKk4nIkqxTPWY8ucZ027_tElu_3tPZlyx_mH_L19XStSkYDChgeCjUvPJWywiM71FKd-TXvppIwegFdk6WTiFPwv_XAC6tofe1ztvuZg6kMIvQI0eIpq6vRaFhSfrRxrD9SbbBIEmfFi3_tHVsaGxu8aoI6Dsd0XRQbOFFUmdtucBaR15R9OlQa2ZlwUfTbBloZnOPurbdNLVI",
+                        "width": 1200
+                    }
+                ],
+                "place_id": "ChIJr4mJ2DpB0i0R3QXe5LYGKxU",
+                "plus_code": {
+                    "compound_code": "87C5+9M Sanur Kaja, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q87C5+9M"
+                },
+                "rating": 4.6,
+                "reference": "ChIJr4mJ2DpB0i0R3QXe5LYGKxU",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 287,
+                "vicinity": "Jl. Bypass Ngurah Rai. 126 Kawasan Ekonomi Khusus Sanur, Lot H1-H2, Jalan Bypass Ngurah Rai No.101, Sanur Kaja"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6796052,
+                        "lng": 115.2606906
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.678256819708496,
+                            "lng": 115.2619501302915
+                        },
+                        "southwest": {
+                            "lat": -8.6809547802915,
+                            "lng": 115.2592521697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 21 1500238",
+                "name": "Bali International Hospital (Main Lobby and MCU Entrance)",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 634,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/108717605867346010853\">Bali International Hospital (Main Lobby and MCU Entrance)</a>"
+                        ],
+                        "photo_reference": "AcnlKN0ccE76y-sQthWZG00pMafHejRinV86BFsy0UB3KNjH8xONUUB24Ecqk8w8kDjLBIROkQR7tUfswYjxxJA03fC5Vpiif9DRpGvyRh9PhcVkk548_D4EnEmxtKRadbSgegrlDRPaLVnXsOU98Nk101X6dxYmjamv2Cu4BK3AzBRSUoVd6rxNB0wps1PbQrtJG_tmeRN606tug7XZ7PVIS8N5NMeuekxHnx2JoC0ovxaRvLmaj7HogM36wWJ7E_CEUj_snHmtj5Hn4-CZFbxpDUeNwi_35Xe2WPp-mcjG_EqsY63Ih7zPj0dawzh_QfftqfEAp3mlALI",
+                        "width": 1200
+                    }
+                ],
+                "place_id": "ChIJ-6GCpbFB0i0R3E8qps6G4p8",
+                "plus_code": {
+                    "compound_code": "87C6+57 Sanur Kaja, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q87C6+57"
+                },
+                "rating": 4.1,
+                "reference": "ChIJ-6GCpbFB0i0R3E8qps6G4p8",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 86,
+                "vicinity": "Jalan Kawasan Ekonomi Khusus Sanur, Lot H1-H2, Sanur Kaja"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.679480500000002,
+                        "lng": 115.2605972
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.6781318197085,
+                            "lng": 115.2619029802915
+                        },
+                        "southwest": {
+                            "lat": -8.680829780291505,
+                            "lng": 115.2592050197085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 812-1166-1127",
+                "name": "Health Screening Bali International Hospital",
+                "opening_hours": {
+                    "open_now": false
+                },
+                "photos": [
+                    {
+                        "height": 2481,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/105413115376223821414\">BIH Commercial Social Media</a>"
+                        ],
+                        "photo_reference": "AcnlKN18MkJGN2vjW07IULNE_zQG1r0i-_24HyiLHEMwZRLRyQGw1vPaH7GOmCnaYpFNpiHWUv8ePNdINS7fgV4reANsGgtp1D8P7YqpZXniao7z_KKf7Pf0TMEX2KQ58lw5e7_-_vNud_GqG2oY8n3Xb21tfPdA4VOzMZrLHxPiIALXlr4KcefZe72LjxYSgDMKJTNmSYSc_SbI-eUMTVqPMzpBuJDJ8GMyqkanIvi5jW8N_USmUbb7LSdU2GJgUObM56B0JztTky42b3NgelSaxu_ZtvvBcJTStSDBTvTVNC3A1paZMU2CbgH2gxXoiGEnxYhZlPLyZtpP4T3MKBNZj00fSa8zRO_nIigKX5VFz1CKI5TTQGm-S6XETiio9OpVlsKnrBWBQW-2fcYuU8rOSW5rkJaUEkXditiCPIsF_gipz9TesxZUwP5grg2sbB5vL-nDI1H-XhgYh_28R-5OqMJLHmqVLkwfsWhK7BurB641G6gNb5F387Q1dEB7b9kX-42zp5rpTV_y857_K-K3TBKo9nOVjViH9yLMeSAyDCqHdqRN1L0BlS5oYgDtqmxIADoecZzn239i2V9jEUqCU4WpKFc7_zSoWHzNn0Ba_33YXxtUYiRVQhdjbkFiOF4K_INHPsqxbprAVNUE5aVyDTM2I08",
+                        "width": 1861
+                    }
+                ],
+                "place_id": "ChIJA9tRVQBB0i0RAdzLc2rmisc",
+                "plus_code": {
+                    "compound_code": "87C6+66 Sanur Kaja, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q87C6+66"
+                },
+                "rating": 3,
+                "reference": "ChIJA9tRVQBB0i0RAdzLc2rmisc",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 3,
+                "vicinity": "Jalan Kawasan Ekonomi Khusus Sanur, Lot H1-H2, Sanur Kaja"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6772119,
+                        "lng": 115.2586608
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.675879369708499,
+                            "lng": 115.2600741302915
+                        },
+                        "southwest": {
+                            "lat": -8.678577330291503,
+                            "lng": 115.2573761697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+                "icon_background_color": "#7B9EB0",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+                "international_phone_number": "+62 813-3744-3773",
+                "name": "Doctor Surya Associates",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3272,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/114035343629808548073\">Doctor Surya Associates | dr. I.B Suryadi Putra D,S.Ked | General Doctor | Dentist | Pharmacy ApotekKU Bypass Sanur Bali</a>"
+                        ],
+                        "photo_reference": "AcnlKN3zSpFF6Um5vvNGysyzqRqZvXC22RFr_hKbSbX98F1_jH-W4rEakrKFXVQU_6hYRx4RFZrsitpk94m9SRtWfmeM3bXbz4earj0MIxFZ8uHi3myy_FYaic-r3ojGNo_4dOl-UcJa2QxjuiqsUXWMc02NG0ViThJP-CeAmf3cYV9v7x5OL8FRbdLNIPA9Tnf8gzS0H-2qhRTBdkKT3Hio4ZSEwpcO9d6b9Sael6az8bG2HeKhL7GqJ1p-HukZ0uUNJ52sBP7W1gFmhXwQg3vdx6aLQloDzrbvn1drwV6va6f4fBCIaJnxMyGZHq8t8Xsn7w_g89sPAVc",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJwRiBPMRB0i0RLIfnbYE5tV4",
+                "plus_code": {
+                    "compound_code": "87F5+4F Sanur Kaja, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q87F5+4F"
+                },
+                "rating": 5,
+                "reference": "ChIJwRiBPMRB0i0RLIfnbYE5tV4",
+                "scope": "GOOGLE",
+                "types": [
+                    "doctor",
+                    "hospital",
+                    "pharmacy",
+                    "dentist",
+                    "health",
+                    "store",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 4,
+                "vicinity": "Jalan Bypass Ngurah Rai Br. Anggar Kasih No.214, Sanur Kaja"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6793688,
+                        "lng": 115.2619578
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.6781792697085,
+                            "lng": 115.2634499802915
+                        },
+                        "southwest": {
+                            "lat": -8.680877230291504,
+                            "lng": 115.2607520197085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "name": "Bluecross Medika Internasional",
+                "place_id": "ChIJS_kYNABB0i0Rnkod9zJRe5E",
+                "rating": 5,
+                "reference": "ChIJS_kYNABB0i0Rnkod9zJRe5E",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 4,
+                "vicinity": "The Sanur Lot H3A"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.676269999999999,
+                        "lng": 115.2564565
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.674957419708498,
+                            "lng": 115.2578786802915
+                        },
+                        "southwest": {
+                            "lat": -8.677655380291503,
+                            "lng": 115.2551807197085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "name": "Klinik Anger Kasih dr. Eka Rahayu Dewi",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 3000,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/102446351607713389443\">dwiari setyomukti</a>"
+                        ],
+                        "photo_reference": "AcnlKN1o5faxZEDYd3fHbn7YPWhdrNoqA5KsjNj6pjA3cMdVBU8tpzDUEe50W24J1wPc-Jv37vfBd4vn3NN0dcys6A6lJLZ-Ac22MlB7hIWzeZlbv63wZzKh9vPw7NzfxM006cYD-mo0RukaRcVKmogxTalWrSoilHiKKqCMzAzDsL-3U02Mvx0Xb3xHv3gniuluKe4rmfW1j4sAosuw8UV1hNKmgkigt2-vS3StisxBOYsbK_YJJz91ouz9ZQhxaaJLkH44nv3rB74I_Uum_bnnqw5YsZk_h6qy9sT7BYN3qSeGsDNR5dLdd-9j7bXB_4WheHmRHtJ_x45AiXoQknxzr7f9CloZ9os3Gbz0y2uvc_5QrsWkN5AOPGbB02NVZr0ECnYsOwR1LH2ST9FoDngawDpu3hBoSjavUVO2c7iyK5G0t6cmRyFUnJUaab2XWhrKzmRRzibNm3ShsoGZkax0v8pRSA9G867irEEPWp2O-XvoqIQ3DzQMUv_Ix1pw_1QsNCcuXd4D496jsjnCTL4DCQ6jJ9OnsQXDNwUhfmVoP05GXE4wyD4C0SHNhCJGs6RKnlNmE-29VLd5MvGKZsHxJIwwOIPwBC0a1_rzfiAAadrd7P_erwn1hqq5waqNinhVY5c6fbBF",
+                        "width": 4000
+                    }
+                ],
+                "place_id": "ChIJDe0jlQNB0i0Rsb6g92IIhkQ",
+                "plus_code": {
+                    "compound_code": "87F4+FH Sanur Kaja, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q87F4+FH"
+                },
+                "rating": 4.8,
+                "reference": "ChIJDe0jlQNB0i0Rsb6g92IIhkQ",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 10,
+                "vicinity": "Jalan Danau Beratan No.12, Sanur Kaja"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.694097400000002,
+                        "lng": 115.2525868
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.692737969708498,
+                            "lng": 115.2540111302915
+                        },
+                        "southwest": {
+                            "lat": -8.695435930291502,
+                            "lng": 115.2513131697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "name": "Puskesmas Pembantu Sanur Kauh",
+                "opening_hours": {
+                    "open_now": false
+                },
+                "photos": [
+                    {
+                        "height": 1920,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/110525373714388634783\">Artana Pinatih</a>"
+                        ],
+                        "photo_reference": "AcnlKN3TUu98wAjJEop9x9t13r3CoFObXa8xEK3AuZo24MX85rseKJeubtoTc7mXoFAnO6f9eMdrMlS7C7iNAefB0Hyt6MyyvZv4nQpZB_SS-oZE1_kIvIp3efja1_XaRUqIuv63bqdXdP43yTH1TOVPBO_AJmsOT3eZkiO4yCHm470qC_F10sCn9R2D2m5iUJyIpcA8phEhKTcMGLCeaOOTmY3NkLOTJZUxVGUJkYkmcth1i19yIh7QSXsuZy0RD4XgD52lb2-seWP6-uXfqz7V7nClX6qJ-AdpYetSfVvMqEhlxSVvatoD7hu3HKItrwKxEGDdmWvT_2XLNnBtS7mJbvK8hNtuyeFJCgNRRicXceA7llzFJumg68JCodOC6kjsdngMJDu2AzoAnShX5nh2H8baOkAX8vIt4pvOTIv83uRq68gPst0J8S_OAoCkei9JpZecEwXe9QzMTbOoJBm1AVx9EQlcHcx5wYbRalxgtO31wZ6IeSYKSKd2i4CSQduv3kmaAiPIRcdmcm0wm7cDsMDJPjCaNVGDqY8SR1OyhYjSMK8sU8Bb8K69Tw5N6dtOX2xIpu4cGE0QTHMEMKlB7TDsUyTGneJoLab11oDF3ol1P6ovsh3AWj5q94aDpqry",
+                        "width": 1080
+                    }
+                ],
+                "place_id": "ChIJDYWUhBJB0i0RwcbNksRTjgc",
+                "rating": 2.3,
+                "reference": "ChIJDYWUhBJB0i0RwcbNksRTjgc",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 3,
+                "vicinity": "8743+928, Sanur Kauh"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6927512,
+                        "lng": 115.2633979
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.691409319708498,
+                            "lng": 115.2648875302915
+                        },
+                        "southwest": {
+                            "lat": -8.694107280291503,
+                            "lng": 115.2621895697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "name": "Rika Massage",
+                "place_id": "ChIJmcBzcMlB0i0RCe_4LMEu0jo",
+                "plus_code": {
+                    "compound_code": "8747+V9 Sanur, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q8747+V9"
+                },
+                "rating": 5,
+                "reference": "ChIJmcBzcMlB0i0RCe_4LMEu0jo",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 1,
+                "vicinity": "Jalan Danau Tamblingan No.118-120, Sanur"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6726145,
+                        "lng": 115.2583237
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.671207819708497,
+                            "lng": 115.2597747302915
+                        },
+                        "southwest": {
+                            "lat": -8.673905780291502,
+                            "lng": 115.2570767697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 812-3838-2342",
+                "name": "Drg. Ade Agus Indra Yoga | ADentist Dental Clinic",
+                "opening_hours": {
+                    "open_now": false
+                },
+                "place_id": "ChIJPTVu0rRB0i0Rk6rRdZvbOrs",
+                "plus_code": {
+                    "compound_code": "87G5+X8 Sanur Kaja, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q87G5+X8"
+                },
+                "reference": "ChIJPTVu0rRB0i0Rk6rRdZvbOrs",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "vicinity": "Jalan Bypass Ngurah Rai No.176, Sanur Kaja"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6835097,
+                        "lng": 115.241349
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.682273919708496,
+                            "lng": 115.2426820802915
+                        },
+                        "southwest": {
+                            "lat": -8.684971880291501,
+                            "lng": 115.2399841197085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "name": "M Arthen Kaadja pengobatan tradisional",
+                "photos": [
+                    {
+                        "height": 1080,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/111259819526485694843\">Mujiono Musarip</a>"
+                        ],
+                        "photo_reference": "AcnlKN04MIwqexA3G79tUoZB10mgeiNOLKAgvgPPetWG_rJMAhlsUhS01qbyclAFkNRctOUkB7IsLtsChKSe_y5wJSQZ8_S0g7W89JhgRhw1S-yavoEq8v3DTIWQU3KTheG8qTeZWqSH1suM2abjtfFcJTxqjnAGIXw16yu_glXSQ5wvSDSpI-lR79rc2FRBPUTKMaQjZTyQQZgVKGy7qQahzaLcN-t0gkU9MFMSg0m98y2Hgb9O-IB20gLRbAIQkZPbwCkJ6CeQqV4cXova87BiLV7hVBKTQ4h7U2_t9UzSk6sjIxf-JIi0D-6pROzgnUMuutrOtqWoaX-NkQzX8kQWVEVnWsZQOWWynBHjrzKVPWAqk9YuGcnVRCLBd2RlB6Bk_-eLdr5G1EYmlOyKG6w4uWc2uIpKIbzX8v9f84fKvwR89bhvMbjKN2jLvaiIPPn9rv8kZMroBu4js_h7cTFVfBtAluanl95G9VLcILpqTHpoTLm4lz_Xw2v-Zt2vmuBWmzM4sirwaiJQ4Y3PLT1mw5t1v7sHw5mKZwSMNr_EZvquVq86TbM4u1ItkjBRiaY4hJ1ISJmHndnQ4Fb0PFMxi_VQIogY7lk6JfwKZmQwZ6XyJ-44xw6Jn15AI1ymJvHVtFHKtRh4",
+                        "width": 1920
+                    }
+                ],
+                "place_id": "ChIJY0ulffdB0i0R5V5WI1CR9kE",
+                "plus_code": {
+                    "compound_code": "868R+HG Renon, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q868R+HG"
+                },
+                "reference": "ChIJY0ulffdB0i0R5V5WI1CR9kE",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "vicinity": "Jalan Tukad Oos No.4, Renon"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6863045,
+                        "lng": 115.2386434
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.684954819708498,
+                            "lng": 115.2400305302915
+                        },
+                        "southwest": {
+                            "lat": -8.687652780291502,
+                            "lng": 115.2373325697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "name": "Puskesmas Pembantu Renon",
+                "place_id": "ChIJ2fgvJQBB0i0Ra66urtceV48",
+                "reference": "ChIJ2fgvJQBB0i0Ra66urtceV48",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "vicinity": "867Q+FFC, Jalan Tukad Badung XI A, Renon"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.674423899999999,
+                        "lng": 115.2414117
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.673108419708498,
+                            "lng": 115.2427603302915
+                        },
+                        "southwest": {
+                            "lat": -8.675806380291503,
+                            "lng": 115.2400623697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 878-8000-7636",
+                "name": "IMUTS Baby Spa RENON",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "place_id": "ChIJqRI1gdNB0i0RlUB4rpJ-4K8",
+                "plus_code": {
+                    "compound_code": "86GR+6H Renon, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q86GR+6H"
+                },
+                "rating": 5,
+                "reference": "ChIJqRI1gdNB0i0RlUB4rpJ-4K8",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 4,
+                "vicinity": "Jalan Tukad Balian No.10 Blok A, Renon"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6666432,
+                        "lng": 115.2550544
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.665325419708498,
+                            "lng": 115.2564078302915
+                        },
+                        "southwest": {
+                            "lat": -8.668023380291501,
+                            "lng": 115.2537098697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 361 777111",
+                "name": "Darmesta Internusa. PT",
+                "place_id": "ChIJn2el-3JB0i0RnQ7CmGqduyU",
+                "reference": "ChIJn2el-3JB0i0RnQ7CmGqduyU",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "vicinity": "JL By Pass Ngurah Rai No. 243, Denpasar, 80363"
+            },
+            {
+                "business_status": "OPERATIONAL",
+                "geometry": {
+                    "location": {
+                        "lat": -8.6736796,
+                        "lng": 115.2407047
+                    },
+                    "viewport": {
+                        "northeast": {
+                            "lat": -8.672236219708497,
+                            "lng": 115.2420620302915
+                        },
+                        "southwest": {
+                            "lat": -8.674934180291501,
+                            "lng": 115.2393640697085
+                        }
+                    }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+                "icon_background_color": "#F88181",
+                "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+                "international_phone_number": "+62 811-3810-558",
+                "name": "Frejus Clinic Bali ( Jasper Skincare )",
+                "opening_hours": {
+                    "open_now": true
+                },
+                "photos": [
+                    {
+                        "height": 4032,
+                        "html_attributions": [
+                            "<a href=\"https://maps.google.com/maps/contrib/103901800651557120891\">meike 17</a>"
+                        ],
+                        "photo_reference": "AcnlKN3mDc60A7EfmRk-2M0jtS7jT1bX0HzVtMzOfSaoq01utv-LFdABxUyw4qQnq_d4N95T7tDgPyN8MZ9GT3BnMooe7B_nbsvvv2Dw830yULI6SOpmcUhDvNg5-VetHGiRO7NoMZuqPTJy8DXX7wogmysd-44KvNvG0mzQWMKDpaIa4MdDR3lltoX3PSEmBGhz6VOyaJ3SG9_Df9eIrLfdL6hHnZAjA6xgV67I7dS3hVt0cTz1i5O1oovpnk71VC_OoiOtwuVKydt2A6xZDfEdgJqc9AtI2tr8ilu1O0MujPhLFiaFJRWEv1E1RC2RY8s1YMLQGLFvHEdrrDkXCI2YoB0rD0v_eSIniZP_sldFYi1uVXEIeNC5m2eH0ikvhJ6p9hifYe2bRjXqaPLVlp8zb4HkOV6jZmN_c7Bv0vG-xpOhevYNpbTgHujDHJaTcA1hJoD0TGZ2_q6jMDfT24emx6h-IFecAUPtHxgspdXrIhVCeU9Z2LCKLhNjLNhBdXC5UpPoV5nCy_3YNRsKpb24Ksnz5QOhHxpasM6rEEsPsQ37KYZgbtOMj1HwG4LTXJlC7oP3Bq96PA3Ie3ViKWbM_Km1rAPQfikwlfdwQTAt4wogmOnXES0x0qmlPW3tMlueJp2ISw",
+                        "width": 3024
+                    }
+                ],
+                "place_id": "ChIJkVaObgBB0i0Rkt5vBo0i7Sc",
+                "plus_code": {
+                    "compound_code": "86GR+G7 Sumerta Kelod, Denpasar City, Bali, Indonesia",
+                    "global_code": "6P3Q86GR+G7"
+                },
+                "rating": 4.9,
+                "reference": "ChIJkVaObgBB0i0Rkt5vBo0i7Sc",
+                "scope": "GOOGLE",
+                "types": [
+                    "hospital",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                ],
+                "user_ratings_total": 59,
+                "vicinity": "Jalan Raya Puputan No.190 D, Sumerta Kelod"
+            }
+        ],
+        "status": "OK"
+    }
+]
