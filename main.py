@@ -84,6 +84,7 @@ def search_nearby_place(locationdata, radius_meters, type_place, api_key):
     else:
         None
 
+    print(f"Berhasil menemukan {len(place_data)} tempat di sekitar lokasi Anda.")
     return destination
 
 
@@ -142,6 +143,11 @@ def search_bytime(travel_time):
         ):
             fastest_place[name] = data
     fastest_place_arr = list(fastest_place.values())
+    
+    print("\n--- Rekomendasi Tempat Tercepat ---")
+    for p in fastest_place_arr:
+        minutes = p['durations_in_seconds'] // 60
+        print(f"Dari {p['origin_name']} ke {p['destination_name']}: {minutes} menit ({p['distance_in_meters']} meter)")
 
 
 def search_byrating(destinationinput):
@@ -162,33 +168,55 @@ def search_byrating(destinationinput):
 
 
 def main():
-    print("WELCOME TO PLACE RECCOMENDATION ")
+    print("WELCOME TO PLACE RECOMMENDATION ")
     print("BY Tobias Don Bosco")
     print("-------------------------------------------------")
     api = input("Input your maps API key from https://console.cloud.google.com/ that you already create : ")
+
     if api is None:
         raise ValueError("API key not found")
-    place_name = input("Input Your Start Place: ")
-    type_place = input("Input your type of place you want to find: ")
-    get_place_coords(place_name, api)
+    while True: 
+        place_name = [input("Input Your Place point: ")]
+        if input("Do you want to input a second point? (y/n): ") == "y":
+            place_name.append(input("Input Your Second Place point:"))
 
-    print('Select the feature you want to use:')
-    print('1. Search by Time')
-    print('2. Search by Place Distance')
-    print('3. Search by Rating')
-    choice = input('Input your choice by type the numer (1/2/3): ')
-
-    if choice == "1":
-        get_travel_time(location_data, destination, api)
-        search_bytime(travel_time)
-    elif choice == "2":
-        radius = int(input("Enter the radius in meters: "))
-        search_nearby_place(location_data,radius,type_place,api)
+        for place in place_name:
+            get_place_coords(place, api)
+    
         
-    elif choice == "3":
-        search_byrating(destination)
+        for detail in location_data:
+            print(f"Place Name: {detail['place_name']}")
+            print(f"Latitude: {detail['latitude']}")
+            print(f"Longitude: {detail['longitude']}")
+            print(f"Area: {detail['area']}")
+        
+        type_place = input("Input your type of place you want to find (e.g : hospital/restaurant/mall/university/kost/apart/etc): ")
+       
 
+        # Melakukan pencarian tempat di awal agar data tersedia untuk semua fitur
+        radius = int(input("Enter the radius to search nearby places (in meters): "))
+        search_nearby_place(location_data, radius, type_place, api)
 
+        print('\nSelect the feature you want to use:')
+        print('1. Search by Time (Travel Time from Origin)')
+        print('2. Search by Rating')
+        print('3. Exit from this program')
+        choice = input('Input your choice by type the number (1/2/3): ')
+
+        if choice == "1":
+            get_travel_time(location_data, destination, api)
+            search_bytime(travel_time)
+        elif choice == "2":
+            search_byrating(destination)
+        elif choice == "3":
+            break
+        else:
+            print("Invalid choice.")
+
+        choice = input("Do you want to select? (y/n): ")
+        
+        if choice == "n":
+            break
 
 if __name__ == "__main__":
     main()
