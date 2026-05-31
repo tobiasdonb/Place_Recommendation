@@ -1,4 +1,5 @@
 requests
 ipykernel
 python-dotenv
+flask
 

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bali Place Finder</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body { font-family: Arial, sans-serif; background: #f0f4f8; color: #333; }
+    header { background: #2563eb; color: white; padding: 1.2rem 2rem; }
+    header h1 { font-size: 1.5rem; }
+    header p { font-size: 0.9rem; opacity: 0.85; }
+
+    /* Layout 2 kolom */
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(380px, 1fr) 2fr;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      max-width: 1600px;
+      margin: 0 auto;
+      align-items: start;
+    }
+    .left-col { min-width: 0; }
+    .right-col {
+      position: sticky;
+      top: 1.5rem;
+      height: calc(100vh - 3rem);
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .card { background: white; border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .card h2 { font-size: 1.1rem; margin-bottom: 1rem; color: #2563eb; }
+    label { display: block; font-size: 0.85rem; margin-bottom: 0.3rem; font-weight: bold; }
+    input, select { width: 100%; padding: 0.5rem 0.75rem; border: 1px solid #ccc; border-radius: 6px; font-size: 0.95rem; margin-bottom: 0.8rem; }
+    button { background: #2563eb; color: white; border: none; padding: 0.6rem 1.4rem; border-radius: 6px; cursor: pointer; font-size: 0.95rem; }
+    button:hover { background: #1d4ed8; }
+    button:disabled { background: #93c5fd; cursor: not-allowed; }
+    .result { margin-top: 1rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 1rem; font-size: 0.88rem; white-space: pre-wrap; max-height: 300px; overflow-y: auto; }
+    .error { color: #dc2626; font-size: 0.88rem; margin-top: 0.5rem; }
+    .step-label { display: inline-block; background: #dbeafe; color: #1e40af; border-radius: 50%; width: 24px; height: 24px; text-align: center; line-height: 24px; font-weight: bold; margin-right: 0.5rem; font-size: 0.85rem; }
+    .row { display: flex; gap: 1rem; }
+    .row > div { flex: 1; }
+
+    /* Responsif: mobile/tablet jadi 1 kolom */
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .right-col { position: static; height: 400px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Bali Place Finder</h1>
+  <p>Find the best nearby places based on travel time or rating</p>
+</header>
+
+<div class="layout">
+  <!-- Kolom kiri: cards -->
+  <div class="left-col">
+
+    <!-- Step 1: API Key + Locations -->
+    <div class="card">
+      <h2><span class="step-label">1</span> Setup</h2>
+      <label>Google Maps API Key</label>
+      <input type="password" id="apiKey" placeholder="Paste your API key here" />
+
+      <label>Origin Place 1</label>
+      <input type="text" id="place1" placeholder="e.g. Kuta Beach, Bali" />
+
+      <label>Origin Place 2 (optional)</label>
+      <input type="text" id="place2" placeholder="e.g. Seminyak, Bali" />
+
+      <button onclick="getCoords()">Get Coordinates</button>
+      <div id="coordsResult" class="result" style="display:none"></div>
+      <div id="coordsError" class="error"></div>
+    </div>
+
+    <!-- Step 2: Nearby Search -->
+    <div class="card">
+      <h2><span class="step-label">2</span> Search Nearby Places</h2>
+      <div class="row">
+        <div>
+          <label>Place Type</label>
+          <input type="text" id="typePlace" placeholder="e.g. restaurant, hospital, mall" />
+        </div>
+        <div>
+          <label>Radius (meters)</label>
+          <input type="number" id="radius" value="2000" min="100" max="50000" />
+        </div>
+      </div>
+      <button onclick="searchNearby()">Search Nearby</button>
+      <div id="nearbyResult" class="result" style="display:none"></div>
+      <div id="nearbyError" class="error"></div>
+    </div>
+
+    <!-- Step 3: Feature Selection -->
+    <div class="card">
+      <h2><span class="step-label">3</span> Get Recommendation</h2>
+      <label>Choose Feature</label>
+      <select id="feature">
+        <option value="time">Search by Travel Time (fastest)</option>
+        <option value="rating">Search by Rating (highest)</option>
+      </select>
+      <button onclick="getRecommendation()">Get Recommendation</button>
+      <div id="recommendResult" class="result" style="display:none"></div>
+      <div id="recommendError" class="error"></div>
+    </div>
+
+  </div>
+
+  <!-- Kolom kanan: map sticky -->
+  <div class="right-col">
+    <div id="map"></div>
+  </div>
+</div>
+
+<script>
+  // State shared across steps
+  let locationData = [];
+  let destinationData = [];
+  let centroidData = null;
+
+  // Inisialisasi map (centered di Bali sebagai default)
+  const map = L.map('map').setView([-8.4095, 115.1889], 10);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors',
+    maxZoom: 19
+  }).addTo(map);
+
+  // Custom icons untuk membedakan jenis marker
+  const blueIcon = new L.Icon.Default();
+  const greenIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
+  });
+  const goldIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-gold.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
+  });
+  const redIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
+  });
+
+  // Simpan marker supaya bisa dihapus saat search ulang
+  let markers = [];
+
+  function clearMarkers() {
+    markers.forEach(m => map.removeLayer(m));
+    markers = [];
+  }
+
+  function fitMapToMarkers(coords) {
+    if (!coords.length) return;
+    const bounds = L.latLngBounds(coords);
+    map.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
+  }
+
+  // Plot titik asal user (Step 1)
+  function plotLocations(locations) {
+    clearMarkers();
+    if (!locations.length) return;
+
+    locations.forEach((loc, i) => {
+      const marker = L.marker([loc.latitude, loc.longitude], { icon: blueIcon })
+        .addTo(map)
+        .bindPopup(`<b>📍 Origin ${i + 1}</b><br>${loc.place_name}<br><small>${loc.area}</small>`)
+        .openPopup();
+      markers.push(marker);
+    });
+
+    fitMapToMarkers(locations.map(l => [l.latitude, l.longitude]));
+  }
+
+  // Plot semua nearby places (Step 2): origin biru + nearby hijau + centroid emas
+  function plotNearbyPlaces(origins, nearby, centroid) {
+    clearMarkers();
+
+    origins.forEach((loc, i) => {
+      const m = L.marker([loc.latitude, loc.longitude], { icon: blueIcon })
+        .addTo(map)
+        .bindPopup(`<b>📍 Origin ${i + 1}</b><br>${loc.place_name}`);
+      markers.push(m);
+    });
+
+    if (centroid) {
+      const m = L.marker([centroid.latitude, centroid.longitude], { icon: goldIcon })
+        .addTo(map)
+        .bindPopup(`<b>⭐ Centroid</b><br>Titik tengah lokasi`);
+      markers.push(m);
+    }
+
+    nearby.forEach(p => {
+      const m = L.marker([p.latitude, p.longitude], { icon: greenIcon })
+        .addTo(map)
+        .bindPopup(`<b>${p.place_name}</b><br>Rating: ${p.rating || 'N/A'}`);
+      markers.push(m);
+    });
+
+    const allCoords = [
+      ...origins.map(l => [l.latitude, l.longitude]),
+      ...nearby.map(p => [p.latitude, p.longitude])
+    ];
+    fitMapToMarkers(allCoords);
+  }
+
+  // Plot hasil rekomendasi (Step 3): hanya tempat hasil + origin sebagai konteks
+  function plotRecommendations(origins, recommendations, centroid) {
+    clearMarkers();
+
+    origins.forEach((loc, i) => {
+      const m = L.marker([loc.latitude, loc.longitude], { icon: blueIcon })
+        .addTo(map)
+        .bindPopup(`<b>📍 Origin ${i + 1}</b><br>${loc.place_name}`);
+      markers.push(m);
+    });
+
+    if (centroid) {
+      const m = L.marker([centroid.latitude, centroid.longitude], { icon: goldIcon })
+        .addTo(map)
+        .bindPopup(`<b>⭐ Centroid</b>`);
+      markers.push(m);
+    }
+
+    recommendations.forEach(p => {
+      const m = L.marker([p.latitude, p.longitude], { icon: redIcon })
+        .addTo(map)
+        .bindPopup(`<b>🏆 ${p.place_name}</b><br>${p.detail || ''}`)
+        .openPopup();
+      markers.push(m);
+    });
+
+    const allCoords = [
+      ...origins.map(l => [l.latitude, l.longitude]),
+      ...recommendations.map(p => [p.latitude, p.longitude])
+    ];
+    fitMapToMarkers(allCoords);
+  }
+
+  function showResult(id, text) {
+    const el = document.getElementById(id);
+    el.style.display = 'block';
+    el.textContent = text;
+  }
+
+  function showError(id, text) {
+    document.getElementById(id).textContent = text;
+  }
+
+  async function getCoords() {
+    showError('coordsError', '');
+    const apiKey = document.getElementById('apiKey').value.trim();
+    const p1 = document.getElementById('place1').value.trim();
+    const p2 = document.getElementById('place2').value.trim();
+
+    if (!apiKey || !p1) {
+      showError('coordsError', 'API key and at least one place are required.');
+      return;
+    }
+
+    const places = p2 ? [p1, p2] : [p1];
+
+    const res = await fetch('/api/coords', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ api_key: apiKey, places })
+    });
+    const data = await res.json();
+
+    if (!res.ok) {
+      showError('coordsError', data.error);
+      return;
+    }
+
+    locationData = data.location_data;
+    const text = locationData.map(p =>
+      ` ${p.place_name}\n   Lat: ${p.latitude}, Lng: ${p.longitude}\n   ${p.area}`
+    ).join('\n\n');
+    showResult('coordsResult', text);
+    plotLocations(locationData);
+  }
+
+  async function searchNearby() {
+    showError('nearbyError', '');
+    if (!locationData.length) {
+      showError('nearbyError', 'Please complete Step 1 first.');
+      return;
+    }
+
+    const apiKey = document.getElementById('apiKey').value.trim();
+    const typePlace = document.getElementById('typePlace').value.trim() || 'restaurant';
+    const radius = parseInt(document.getElementById('radius').value) || 2000;
+
+    const res = await fetch('/api/nearby', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ api_key: apiKey, location_data: locationData, radius, type_place: typePlace })
+    });
+    const data = await res.json();
+
+    if (!res.ok) {
+      showError('nearbyError', data.error);
+      return;
+    }
+
+    destinationData = data.destination;
+    centroidData = data.centroid;
+    const text = `Found ${destinationData.length} places:\n\n` +
+      destinationData.map((p, i) =>
+        `${i + 1}. ${p.place_name} — Rating: ${p.rating || 'N/A'}`
+      ).join('\n');
+    showResult('nearbyResult', text);
+
+    // Tampilkan semua nearby place di map
+    plotNearbyPlaces(locationData, destinationData, centroidData);
+  }
+
+  async function getRecommendation() {
+    showError('recommendError', '');
+    if (!destinationData.length) {
+      showError('recommendError', 'Please complete Step 2 first.');
+      return;
+    }
+
+    const feature = document.getElementById('feature').value;
+    const apiKey = document.getElementById('apiKey').value.trim();
+
+    if (feature === 'time') {
+      const res = await fetch('/api/travel-time', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ api_key: apiKey, location_data: locationData, destination: destinationData, centroid: centroidData })
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        showError('recommendError', data.error);
+        return;
+      }
+
+      const text = 'Fastest Place per Origin:\n\n' +
+        data.fastest.map(p =>
+          `From: ${p.origin_name}\nTo: ${p.destination_name}\nTime: ${Math.floor(p.durations_in_seconds / 60)} min\nDistance: ${p.distance_in_meters} m\nAddress: ${p.alamat}`
+        ).join('\n\n');
+      showResult('recommendResult', text);
+
+      // Map: cocokkan destination_name dengan destinationData untuk dapat lat/lng
+      const recommendations = data.fastest.map(f => {
+        const place = destinationData.find(d => d.place_name === f.destination_name);
+        return place ? {
+          place_name: f.destination_name,
+          latitude: place.latitude,
+          longitude: place.longitude,
+          detail: `From ${f.origin_name}<br>${Math.floor(f.durations_in_seconds / 60)} min (${f.distance_in_meters} m)`
+        } : null;
+      }).filter(Boolean);
+
+      plotRecommendations(locationData, recommendations, centroidData);
+
+    } else {
+      const res = await fetch('/api/rating', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ destination: destinationData })
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        showError('recommendError', data.error);
+        return;
+      }
+
+      const text = ` Highest Rating: ${data.max_rating}\n\n` +
+        data.top_places.map(p => `${p.place_name} — ${p.rating}`).join('\n');
+      showResult('recommendResult', text);
+
+      const recommendations = data.top_places.map(p => ({
+        place_name: p.place_name,
+        latitude: p.latitude,
+        longitude: p.longitude,
+        detail: `Rating: ${p.rating}`
+      }));
+
+      plotRecommendations(locationData, recommendations, centroidData);
+    }
+  }
+</script>
+</body>
+</html>
